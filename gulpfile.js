@@ -13,3 +13,8 @@ gulp.task("replace", () => {
     .pipe(replace("ENV.pin", process.env.pin))
     .pipe(gulp.dest("build"))
 })
+
+gulp.task("deploy", () => {
+  return gulp.src("./build/config.json")
+    .pipe(gulp.dest(".."))
+})

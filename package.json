@@ -1,7 +1,7 @@
 {
   "name": "homebridge",
   "version": "1.0.0",
-  "description": "config.js generation",
+  "description": "Insert .env.json parameters to config.js.",
   "main": "index.js",
   "dependencies": {
     "gulp": "^4.0.2",
@@ -10,8 +10,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp replace && gulp deploy && echo config.json is successfully deployed at parent directory.",
+    "build": "gulp replace && echo config.json is generated at /build/config.json."
   },
-  "author": "",
+  "author": "hosscine",
   "license": "ISC"
 }
