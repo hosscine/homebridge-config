@@ -9,7 +9,7 @@ env({
 gulp.task("replace", () => {
   return gulp.src("config.json")
     .pipe(replace("ENV.username", process.env.username))
-    .pipe(replace("ENV.port", process.env.port))
+    .pipe(replace('"ENV.port"', Number(process.env.port)))
     .pipe(replace("ENV.pin", process.env.pin))
     .pipe(gulp.dest("build"))
 })

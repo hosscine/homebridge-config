@@ -1,9 +1,9 @@
 {
   "bridge": {
     "name": "Homebridge",
-    "username": "B8:27:EB:D5:E5:29",
-    "port": 54886,
-    "pin": "011-85-294"
+    "username": "ENV.username",
+    "port": "ENV.port",
+    "pin": "ENV.pin"
   },
   "description": "Nature Remo Living",
   "accessories": [
