@@ -7,9 +7,11 @@ This is for deploying config.json to my homebridge-nature-remo.
 ```bash
 cd ~/.homebridge
 git clone https://github.com/hosscine/homebridge-config.git
+
 cd homebridge-config
-mv sample.env.json .env.json
-vim .env.json
+cp sample.env.json .env.json
+vi .env.json
+
 npm i
 npm run start
 ```
@@ -36,7 +38,7 @@ Edit .env.json according to your nature-remo environment.
 │   ├── node_modules
 │   ├── package-lock.json
 │   ├── package.json
-│   └── sample.env.json     <- 2. mv sample.env.json .env.json && edit it
+│   └── sample.env.json     <- 2. cp sample.env.json .env.json && edit it
 └── persist
     ├── AccessoryInfo.B827EBD5E529.json
     └── IdentifierCache.B827EBD5E529.json
